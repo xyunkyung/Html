@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <form action="test23.html" method="get" name="frm">
+	<fieldset>
+		<legend>여러 줄 글상자와 목록상자</legend>
+		제목 : <input type="text" name="subject" /><br />
+		내용 : <textarea rows=10 cols=50 name="content"></textarea><br />
+		게시글 종류 : <select name="selop">
+					<option>html5</option>
+					<option>CSS</option>
+					<option>javascript</option>
+					<option>jquery</option>
+				   </select><br />
+		스터디 지역 : <select name="loc">
+					<optgroup label="관악구">
+						<option value="gwanak-sld">신림동</option>
+						<option value="gwanak-bcd">봉천동</option>
+						<option value="gwanak-nhd">남현동</option>
+					</optgroup>
+					<optgroup label="동대문구">
+						<option value="ddm-jnd">전농동</option>
+						<option value="ddm-dsn">답십리</option>
+						<option value="ddm-ssd">신설동</option>
+					</optgroup>
+				   </select>
+		<input type="submit" value="전송" />
+	</fieldset>
+  </form>
+ </body>
+</html>

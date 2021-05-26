@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <form action="test23.html" name="frm" method="get">
+  <fieldset>
+  	<legend>회원가입</legend>
+	아이디 : <input type="text" name="userId" size=25 maxlength=13 /><br />
+	비밀번호 : <input type="password" name="userPw" /><br />
+	메일수신 : <input type="radio" name="receive" value="Y" />예
+			<input type="radio" name="receive" value="N" />아니요<br />
+	관심분야 : <input type="checkbox" value="HTML" name="chk1" />HTML
+			<input type="checkbox" value="CSS" name="chk1" />CSS
+			<input type="checkbox" value="JQuery" name="chk1" />JQuery<br />
+	<input type="submit" value="전송" />
+	<input type="reset" value="취소" />
+	<input type="button" value="확인" onclick="javascript:location.href='test9.html'" />
+	<input type="image" src="images/img1.jpg" width=50/><br />
+	<input type="hidden" name="hdd" value="히든" />
+	파일 올리기 : <input type="file" name="fileselect" />
+	</fieldset>
+  </form>
+  <a href="tes23.html?name=이현경&age=25"></a>
+ </body>
+</html>
