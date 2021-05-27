@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="test2.html" method="get" name="frm">
+    <fieldset>
+      <legend>회원등록</legend>
+      <table border="1" width="650px" align="center">
+        <caption>회원가입 서식 작성</caption>
+        <col width="40%" />
+        <col width="60%" />
+        <tbody>
+          <tr>
+          <th>*이름</th><td><input type="text" name="userName"
+            required="required" autofocus="autofocus" /></td>
+          </tr>
+          <tr>
+            <th>*사진</th>
+            <td><input type="file" name="userImg" /></td>
+          </tr>
+          <tr>
+          <th>*아이디</th><td><input type="text" name="userId"
+            required="required" placeholder="아이디는 8글자 이상입니다."/></td>
+          </tr>
+          <tr>
+            <th>*비밀번호</th><td><input type="password" name="userPw"
+              required="required" placeholder="대소문자와 숫자, 특수문자를 적어도 하나씩 사용해야 합니다." size="50"/></td>
+          </tr>
+          <tr>
+            <th>*비밀번호 확인</th>
+            <td><input type="password" name="userPwCon"
+            required="required" size="40" /></td>
+          </tr>
+          <tr>
+            <th>이메일</th><td><input type="email" name="userEmail"
+              placeholder="@를 포함한 주소를 입력하세요." size="40" /></td>
+          </tr>
+          <tr>
+            <th>*생년월일</th>
+            <td><input type="date" name="userBirth" required="required" /></td>
+          </tr>
+          <tr>
+            <th>*성별</th>
+            <td><input type="radio" name="userGender" value="M"
+              checked="checked"/>남자
+                <input type="radio" name="userGender" value="F" />여자</td>
+          </tr>
+          <tr>
+            <th>*연락처1</th><td><input type="tel" name="userPh1"
+              pattern="\d{2,3}-\d{3,4}-\d{4}" required="required" /></td>
+          </tr>
+          <tr>
+            <th>*주소</th>
+            <td>우편번호 : <input type="text" name="post" readonly="readOnly"/><br />
+                도로명 주소 : <input type="text" name="userAddr1"
+                  readOnly="readOnly" /><br />
+                상세주소 : <input type="text" name="userAddr2" /></td>
+          </tr>
+          <tr>
+            <th>가입경로</th>
+            <td>
+              <select name="route">
+                <option>지인</option>
+                <option>인터넷</option>
+                <option>잡지</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>취미</th>
+            <td>
+              <select name="hobby" size="3" multiple="multiple">
+                <option selected="selected">농구</option>
+                <option>배구</option>
+                <option>축구</option>
+                <option>야구</option>
+                <option>테니스</option>
+                <option>골프</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>관심 분야</th>
+            <td>
+              <input type="checkbox" value="HTML" name="chk1" checked="checked" />HTML
+              <input type="checkbox" value="CSS" name="chk2" />CSS
+              <input type="checkbox" value="Javascript" name="chke" />Javascript
+            </td>
+          </tr>
+          <tr>
+            <th>이메일 수신여부</th>
+            <td><input type="radio" name="chk" value="Y" checked="checked" />예
+                <input type="radio" name="chk" value="N" />아니요</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="전송" disabled="disabled" />
+              <input type="reset" value="취소" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </form>
+  </body>
+</html>
