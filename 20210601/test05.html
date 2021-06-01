@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+	var kor = Number(prompt("국어 점수는?", "0"));
+	var eng = Number(prompt("영어 점수는?","0"));
+	var mat = Number(prompt("수학 점수는?", "0"));
+	var avg = (kor+eng+mat) / 3;
+	var result = (kor >= 60 && eng >= 60 && mat >= 60) && avg >= 70;
+	document.write(result);
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

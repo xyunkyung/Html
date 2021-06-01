@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	for(i=2; i<=9; i++){
+		for(j=1; j<=9; j++){
+			result=i*j;
+			document.write(i + "x" + j + "=" + result+"<br />");
+		}
+		document.write("<br />");
+	}
+
+	// while문으로 1~100까지의 합 구하기
+	var sum=0;
+	var i=0;
+	while(i < 100){
+		sum += ++i;
+	}
+	document.write(sum + "<br />");
+
+	// 10부터 1까지 출력
+	for(var i=10; i>=1; i--){
+		document.write(i + "<br />");
+	}
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

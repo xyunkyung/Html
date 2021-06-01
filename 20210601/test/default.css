@@ -1,0 +1,249 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+body {
+   font:12px "굴림",Gulim;
+   font-weight: 300;
+   color: #363636;
+}
+a {
+   text-decoration:none;
+   color: #171717;
+}
+a:hover{text-decoration:none;}
+li {list-style:none;   }
+a img{border: none;}
+p{line-height: 190%;}
+h1, h2{margin: 0px;   padding: 0px;}
+p, ul{margin-top:0px}
+#header    {   
+   text-align: center;   
+}
+#logo{
+   width: 500px;
+   height: 100px;
+   margin: 0 auto;
+   padding: 20px, 0px;
+   text-transform:uppercase;
+}
+#logo h1{
+   letter-spacing: 5px;
+   font-size: 30px;
+}
+#logo p{
+   letter-spacing: 5px;
+   color: #FFF;
+}
+#logo a{
+   color: #FFF;
+}   
+#banner {
+   height: 330px;
+   background:url("images/2.png") no-repeat center;
+   background-size: cover;
+}
+#menu-wrapper{   
+   background: #B10058;
+}
+#menu {   
+   height: 75px;
+}
+#menu li {   
+   display: inline-block;
+}
+#menu ul {   
+   text-align: center;
+}
+#menu a {   
+   letter-spacing: 3px;
+   padding: 0px 20px;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 20px;
+   border: none;   
+   line-height: 75px;   
+   color:#fff;
+}
+#menu .current_page_item
+{   
+   background: #C0005F;
+}
+.page_item1:hover {
+   background: #C0005F;
+}
+#header-wrapper{   
+   background-size: 100%;   
+   padding: 60px 0px 20px 0px;   
+   background: #333333;
+}
+#content{   
+   float: right;   /* 왼쪽 메뉴에서 내용을 오른쪽에 붙여서 정렬 */
+   width: 790px;
+}
+#sidebar   {
+   float: left;      
+   width: 345px;   
+}      
+#sidebar .title h2   {      
+   font-size: 160%;   
+}      
+#sidebar .box1   {      
+   margin-bottom: 30px;   
+}
+.title h2   {      
+   font-weight: 400px;      
+   font-size: 20px;      
+   color: #B10058;   
+}   
+.title .byline   {      
+   letter-spacing: 2px;      
+   text-transform: uppercase;      
+   font-weight: 400px;      
+   font-size: 20px;      
+   color: #6F6F6F;   
+}
+#page{   
+   position: relative;
+   overflow: hidden;   
+   padding: 30px 10px 20px 10px;
+}
+
+#portfolio-wrapper
+{
+   background: #A80154;
+   padding: 40px 10px;
+   color: rgba(255,255,255,7);
+}
+
+#column1,#column2,#column3,#column4
+{
+   width: 282px;
+}
+#column1,#column2
+{
+   float: left;
+   margin-right: 30px;
+}
+#column3
+   {
+      float: left;
+   }
+   
+#column4
+   {
+      float: right;
+   }
+#portfolio
+   {
+      overflow: hidden;
+   }
+#portfolio .title h2{
+font-size:20px;
+color:#FFF;}
+
+.container{
+width:1200px;
+margin:0px auto;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:15px 15px 15px 15px;
+background:#BB005D;
+letter-spacing: 2px;
+text-decoration:none;
+text-transform:uppercase;
+font-weight:400px;
+font-size:19px;
+color:#FFF;
+}
+
+.image img{
+display:block;
+width:100%;
+}
+
+.image{
+display:inline-block;
+width:100%;
+margin:0 0 20px 0;
+}
+
+ul.style1 li{
+border-top:solid 1px #E5E5E5;
+padding:8px 0px;
+}
+
+ul.style1 li:first-child{
+border-top:0;
+color:#FFF;
+}
+
+ul.style2 li{
+border-top:solid 1px #E5E5E5;
+padding:8px 0px;
+color:#FFF;
+}
+
+ul.style2 li:first-child{
+border-top:0;
+}
+
+ul.style3 li{
+border-top:solid 1px #E5E5E5;
+padding:8px 0px;
+color:#FFF;
+}
+
+ul.style3 li:first-child{
+border-top:0;
+}
+
+#box1, #box2{
+float: left;
+width:354px;
+padding-right:30px;
+}
+
+#box3{
+float:right;
+width:354px;
+padding-left:40px;
+}
+
+#copyright{
+text-align:center;
+}
+
+#footer-wrapper{
+overflow:hidden;
+background:#1E1B1A;
+padding:50px 0px;
+
+}
+
+footer .title h2{
+color:#FFF;
+}
+
+ul.style1 li a, ul.style2 li a, ul.style3 li a{
+color:#fff;
+}
+
+#copyright {
+text-align:center;
+text-decoration:none;
+background:#BB005D;
+height:50px;
+padding-top:25px;
+}
+
+#copyright address{
+letter-spacing:5px;
+text-align:center;
+text-transform:uppercase;
+font-size:150%;
+color:#FFF;
+}
