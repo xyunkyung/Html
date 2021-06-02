@@ -1,0 +1,32 @@
+*{margin: 0px; padding: 0px;}
+body{font: 12px "굴림", Gulim; font-weight: 300; color: #363636;
+     width: 600px; margin: 0 auto;}
+a{text-decoration: none; color: #171717;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+a img{border: none;}
+p{line-height: 190%;}
+h1, h2{margin: 0px; padding: 0px;}
+p, ul{margin-top: 0px;}
+#logo{width: 600px; height: 100px; margin: 0 auto;
+      padding: 20px, 0px; text-transform: uppercase;
+      background: black;}
+#logo h1{letter-spacing: 5px; font-size: 30px; text-align: center;
+         padding-top: 20px;}
+#logo p{letter-spacing: 5px; color: #FFF; text-align: center;}
+#logo a{color: #FFF;}
+#banner{background: url("images/1.png") no-repeat center;
+        height: 330px; background-size: cover;}
+#menu-wrapper li a{width: 100px; height: 20px; background: pink;
+                   color: #FFF; padding: 10px; text-align: center;
+                   float: left; display: inline-block;}
+#menu-wrapper li a:hover{background: red;}
+#page .content{background: #FFF;}
+#content{width: 400px; padding: 10px; float: right;}
+#content .title  h2{color: pink; font-size: 20px; font-weight: bold; padding-top: 10px;}
+#content p{padding-top: 10px; text-align: left;}
+.box2{width: 160px; padding: 10px; float: left;}
+.box2 .title  h2{color: pink; font-size: 16px; font-weight: bold; padding-top: 10px;}
+.style2{padding: 10px;}
+.style2 li{padding: 5px;}
+#profolio-wrapper{width: 600px;}
