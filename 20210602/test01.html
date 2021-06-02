@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      /* 인터넷 익스플로러에서만 사용 가능 */
+      var arr= new Array();
+      arr[0]="김부자";
+      arr[1]="ddd";
+      for(var i=0; i<arr.length; i++){
+        document.write(arr[i] + "<br />");
+      }
+      var days=new Array("일", "월", "화", "수", "목", "금", "토");
+      var today=new Date();
+      var yoil=days[today.getDay()];
+      document.write(yoil+"요일 <br />");
+
+      var money = [100,100,200,50];
+      var sum=0;
+      for(var i=0; i<money.length; i++){
+        sum+=money[i];
+      }
+      document.write(sum);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function alt() {
+        alert("알림 창입니다.");
+      }
+      function conf() {
+        if(confirm("장바구니로 이동하시겠습니까?")){ // true 또는 false만 전달
+          location.href="http://naver.com";
+        }
+      }
+      function promp() {
+        var name=prompt("당신의 이름을 입력해주세요.");
+        document.write(name);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="alt();">경고창</button>
+    <button onclick="conf();">확인</button>
+    <button onclick="promp();">prompt</button>
+  </body>
+</html>

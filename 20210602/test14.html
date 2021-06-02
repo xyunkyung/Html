@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>H1 Tag1</h1>
+    <h1>H1 Tag2</h1>
+    <h1>H1 Tag3</h1>
+    <h1>H1 Tag4</h1>
+    <p>pppp1</p>
+    <p>pppp2</p>
+    <p>pppp3</p>
+    <h2 class="head2">head2 class</h2>
+    <h2 class="head2">head2 class</h2>
+    <h2 class="head2">head2 class</h2>
+    <h2 class="head2">head2 class</h2>
+    <h3 id="head3">head3 id</h3>
+    <h3 id="head3">head4 id</h3>
+    <input type="text" id="head3" />
+  </body>
+  <script>
+    console.log(document.getElementsByTagName("h1"));
+    console.log(document.getElementsByTagName("p"));
+    console.log(document.getElementsByClassName('head2'));
+    console.log(document.getElementById('head3')); // 복수 불가
+    document.getElementById('head3').value="이현경";
+  </script>
+</html>

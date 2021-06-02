@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var myAgent=navigator.userAgent.toLowerCase();
+      var mobile=["iphone","ipod","android","blackberry","window ce","nokia",
+      "webos","opera mini","sonyericsson","opera mobi","iemobile"];
+
+      for(var i=0; i<mobile.length; i++){
+        if(myAgent.indexOf(mobile[i]) >= 0){
+          location.href="http://m.naver.com";
+          break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- -->
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="interval();">증가</button>
+    <button onclick="stop();">정지</button>
+    <button onclick="pause();">일시정지</button>
+    <button onclick="setTime();">10초 후 경고 창</button>
+    <h1 id="msg">0</h1>
+
+    <script>
+      var myTime;
+      var x=0;
+      var test=0;
+      var msg=document.getElementById("msg");
+      function interval() {
+        myTime=setInterval(function(){
+          x++;
+          msg.innerHTML=x;
+        }, 1000);
+      }
+      function pause(){
+        test=x;
+        clearInterval(myTime);
+        msg.innerHTML=test;
+      }
+      function stop() {
+        clearInterval(myTime);
+        x=0;
+        msg.innerHTML=x;
+      }
+      function setTime(){
+        setTimeout(function(){
+          alert("10초 후에 창이 닫힙니다.");
+          window.close();
+        }, 10000);
+      }
+    </script>
+  </body>
+</html>

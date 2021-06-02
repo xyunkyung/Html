@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h2>Element Control</h2>
+      <h3>query selector</h3>
+      <p>쿼리 셀렉터는 css 의 셀렉터를 차용 한 것 입니다.</p>
+      <p class='ex'>하지만 복수개의 엘리먼트는 수용 하지 못합니다.</p>
+      <span id="sample"></span><br>
+      <a href="http://www.w3schools.com/jsref/met_document_queryselector.asp"
+      target="_blank">
+         관련 내용은 여기서 보세요
+      </a>
+      <div>
+         <p>특정 요소의 자식 요소를 선택 할 수도 있습니다.</p>
+      </div>
+      <button onclick="pTag();">p태그</button>
+      <button onclick="className1();">p의ex클래스</button>
+      <button onclick="idName1();">아이디</button>
+      <br>
+      <button>자식요소</button>
+      <button>속성</button>
+  </body>
+  <script>
+    console.log(document.querySelector('p'));
+    function pTag() {
+      document.querySelector('p').style.backgroundColor="red";
+    }
+    function className1() {
+      document.querySelector('.ex').style.backgroundColor="red";
+    }
+    function idName1() {
+      document.querySelector('#sample').innerHTML="이현경";
+    }
+  </script>
+</html>

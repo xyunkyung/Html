@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var num1=10; // 전역변수 : 어디서나 사용 가능
+      function theFnc(num2) {
+        var sum=num1+num2;
+        return sum; // 값을 호출함수에게 전달하거나 함수를 종료할 때
+        document.write("svsDvSAV");
+      }
+
+      var result=theFnc(40);
+      document.write(result);
+      document.write("<br />");
+      function theFnc1(){
+        num1=30;
+      }
+      theFnc1();
+      document.write(num1);
+      document.write("<br />");
+
+      function theTest2() {
+        var num1=200; // 지역 변수 : 블럭 안에서만 사용 가능
+        alert(num1);
+      }
+      theTest2();
+      document.write(num1);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

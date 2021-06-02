@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var num=100;
+      document.write("num"+10+"<br />");
+      document.write(num+10+"<br />");
+      document.write(eval("num")+10+"<br />");
+      function txtTest() {
+        var ele="document.getElementById('name')";
+        var txt=eval(ele);
+        var txt1=document.getElementById('name');
+        txt.value="이현경";
+      }
+      var result=isNaN("aaaaa");
+      document.write(result+ "<br />");
+      result=isNaN("10101010");
+      document.write(result+"<br />");
+      result=isNaN("010-1234-1234");
+      document.write(result+"<br />");
+
+      var num111="11111";
+      var num222="12121";
+      document.write(num111+num222+"<br />");
+      document.write(eval(num111)+eval(num222)+"<br />");
+      if(!isNaN(num111)&&!isNaN(num222)){
+        var result=parseInt(num111)+parseInt(num222);
+        document.write(result+"<br />");
+        document.write(Number(num111)+Number(num222)+"<br />");
+      } else{
+        document.write(num111+num222);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="name">
+    <button onclick="txtTest();">버튼</button>
+  </body>
+  <script>
+
+  </script>
+</html>

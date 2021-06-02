@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      /* 배열 메서드
+         1. reverse() 배열 데이터 역순 정렬 */
+     var theFood=["짜장면", "냉면", "갈비탕", "돈까스", "삼겹살"];
+     theFood.reverse();
+     document.write(theFood+"<br />");
+     console.log(theFood);
+
+     /* 2. sort() 배열 데이터 이름 또는 숫자 정렬 */
+     var theSubway=["2호선", "9호선", "7호선", "4호선", "3호선"];
+     theSubway.sort();
+     console.log(theSubway);
+     document.write(theSubway +"<br />");
+
+     /* 3. concat() 배열들의 데이터를 결합 */
+     var Mountain1=["남산", "도봉산", "관악산", "청계산", "북한산"];
+     var Mountain2=["설악산", "지리산", "한라산", "속리산"];
+     Mountain1.concat(Mountain2); /* 배열에 영향을 미치지 않음 */
+     document.write(Mountain1 +"<br />");
+     var joinResult=Mountain1.concat(Mountain2);
+     document.write(joinResult +"<br />");
+
+     /* 4. slice(시작인덱스, 마지막인덱스) 원하는 데이터만 선택 */
+     Mountain1.slice(2, 4);
+     document.write(Mountain1 +"<br />"); /* 배열에 영향을 미치지 않음 */
+     var result = Mountain1.slice(2, 4);
+     document.write(result +"<br />");
+
+     /* 5. shift 데이터 이동 */
+     var theSubway=["2호선", "9호선", "7호선", "4호선", "3호선"];
+     theSubway.shift(); /* 왼쪽으로 이동 (첫 번째 배열 값 삭제)*/
+     document.write(theSubway +"<br />");
+
+     var newLine1="1호선";
+     theSubway.unshift(newLine1); /* 오른쪽으로 이동 (첫 번째 배열 값 추가) */
+     document.write(theSubway +"<br />");
+
+     /* 6. pop 맨 뒤 배열 값을 꺼내오는 것 */
+     var result=theSubway.pop();
+     document.write(result +"<br />");
+     document.write(theSubway +"<br />");
+
+     /* 7. push 배열 맨 뒤에 값을 저장 */
+     var newLine2="분당선";
+     theSubway.push(newLine2);
+     document.write(theSubway +"<br />");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

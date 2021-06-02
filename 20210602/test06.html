@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function comFactory(cpuInfo, ramInfo, hddInfo) {
+        this.cpu=cpuInfo;
+        this.ram=ramInfo;
+        this.hdd=hddInfo;
+
+        this.totInfo=function(){
+          document.write("제조업체: 한국전자 <br />");
+          document.write("시스템종류: 64비트 운영체제 <br />");
+        }
+      }
+      var speedCom=new comFactory("2.8GHZ", "2.0GB", "1TB");
+      speedCom.totInfo();
+      speedCom.cpu="111";
+      speedCom.ram="8G";
+      document.write(speedCom.cpu+"<br />");
+      document.write(speedCom.ram+"<br />");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
