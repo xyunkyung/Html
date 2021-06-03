@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="val" type="text" /><button onclick="addList();">추가</button>
+    <br>
+    <ul id="myList">
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Milk</li>
+    </ul>
+    <button id="btn1" onclick="appTest();">엘리먼트 추가</button>
+    <button id="btn2" onclick="dltTest();">자식요소 지우기</button>
+    <button id="btn3" onclick="chgTest();">자식요소 교체</button>
+  </body>
+  <script>
+    function addList() {
+      var tNode = document.getElementById('val').value;
+      var myList = document.getElementById('myList');
+      var list = document.createElement('li');
+      var txt = document.createTextNode(tNode);
+      list.appendChild(txt);
+      myList.appendChild(list);
+    }
+    function appTest() {
+      var t = document.createTextNode("CLICK ME");
+      var btn = document.createElement('button');
+      btn.appendChild(t);
+      document.body.appendChild(btn);
+    }
+    function dltTest() {
+      var list = document.getElementById('myList');
+      list.removeChild(list.childNodes[1]); // 배열 1부터 시작
+    }
+    function chgTest() {
+      var t = document.createTextNode("Water");
+      var item = document.getElementById('myList').childNodes[1];
+      item.replaceChild(t, item.childNodes[0]);
+    }
+  </script>
+</html>

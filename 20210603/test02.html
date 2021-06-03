@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    당신이 입력한 값 : <span></span><br />
+    <input type="text" onkeyup="keyEvt();"><span>(0자 입력)</span>
+  </body>
+  <script>
+    var msg = document.getElementsByTagName('span');
+    var txt = document.getElementsByTagName('input');
+    function keyEvt() {
+      var val = txt[0].value;
+      if(val.length>=0 && val.length<7){
+        msg[1].style.color="black";
+      }
+      if(val.length>=7 && val.length <= 10){
+        msg[1].style.color="red";
+      }
+      if(val.length>=11){
+        val = val.substring(0, 10);
+        txt[0].value = val;
+      }
+      msg[0].innerHTML=val;
+      msg[1].innerHTML="(" + val.length + "자 입력)";
+    }
+  </script>
+</html>

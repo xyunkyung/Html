@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+     src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        // 1. class="theTitle"인 요소에 하위요소를 <a href="#">요소 객체 조작</a>로
+        $("#btn1").click(function(){
+          $(".theTitle").html("<a href='#'>요소 객체 조작</a>");
+        });
+        // 2. class="obj1"인 요소에 텍스트를 리스트_2로
+        $("#btn2").click(function(){
+          $(".obj1").text("리스트_2");
+        });
+        // 3. id="list3"인 요소에 마지막 위치에 <li>list_6</li>요소 추가
+        $("#btn3").click(function(){
+          $("#list3").append("<li>list_6</li>");
+        });
+        // 4. id="list3"인 요소 첫 위치에 <li>list_1</li> 추가
+        $("#btn4").click(function(){
+          $("#list3").prepend("<li>list_1</li>");
+        });
+        // 5. id="list3"인 3번째 li 요소 이전에 <li>insertBefore</li> 추가
+        $("#btn5").click(function(){
+          $("<li>insertBefore</li>").insertBefore($("#list3 li").eq(2));
+        });
+        // 6. id="list3"인 3번째 li 요소 이후에 <li>insertAfter</li> 추가
+        $("#btn6").click(function(){
+          $("<li>insertAfter</li>").insertAfter($("#list3 li").eq(2));
+        });
+        // 7. id="list3"인 요소 하위 li요소 중 첫번째 요소 삭제
+        $("#btn7").click(function(){
+          $("#list3 li").eq(0).remove();
+        });
+        // 8. class="obj2"를 가진 ul을 삭제
+        $("#btn8").click(function(){
+          $(".obj2").parent().remove();
+        }); 
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+     <h1>탐색 선택자  및 html조작</h1>
+     <h2>탐색 선택자</h2>
+
+     <h2 class="theTitle">html 조작</h2>
+     <ul  id="list3">
+        <li class="obj1">list_2</li>
+        <li class="obj2">list_3</li>
+        <li>list_4</li>
+        <li>list_5</li>
+     </ul>
+   </div>
+   <button id="btn1">버튼1</button>
+   <button id="btn2">버튼2</button>
+   <button id="btn3">버튼3</button>
+   <button id="btn4">버튼4</button>
+   <button id="btn5">버튼5</button>
+   <button id="btn6">버튼6</button>
+   <button id="btn7">버튼7</button>
+   <button id="btn8">버튼8</button>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+      src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        $("#btn").click(function(){
+          $("*").css("font-size", "13px");
+        });
+        $("#btn1").click(function(){
+          $("h1").css("color", "red");
+        });
+        $("#btn2").click(function(){
+          $("#firstTitle").css("color", "blue");
+        });
+        $("#btn3").click(function(){
+          $(".nextTitle").css("color", "green");
+        });
+        $("#btn4").click(function(){
+          $("div .obj1").css("font-weight", "bold");
+        });
+        $("#btn5").click(function(){
+          $(".obj3 > li").css("font-weight", "bold");
+        });
+        $("#btn6").click(function(){
+          //$(".obj3 .theObj1").css("background-color", "purple");
+          $(".obj3").children(".theObj1").css("background-color", "purple");
+        });
+        $("#btn7").click(function(){
+          $(".obj4").next().css("color", "orange");
+        });
+        $("#btn8").click(function(){
+          $(".obj4").prev().css("text-align", "right");
+        });
+        $("#btn9").click(function(){
+          $(".obj5").siblings().css("text-align", "center");
+        });
+        $("#btn10").click(function(){
+          $(".obj6").parent().css("border", "dashed 2px #f00");
+        });
+        $("#btn11").click(function(){
+          $(":text").css({"background-color":"#cc","border":"solid 1px #000","color":"green"});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>제이쿼리</h1>
+      <h2 id="firstTitle">선택자</h2>
+      <h3 class="nextTitle">부모 요소 선택자</h3>
+      <div>
+        <p class="obj1">현재 id가 "obj1"인 요소를 기준으로 부모 요소는 'div'요소 입니다.</p>
+      </div>
+      <h3>자식 요소 선택자</h3>
+      <ul class="obj3">
+        <li>리스트1</li>
+        <li class="theObj1">리스트2</li>
+        <li>리스트3</li>
+      </ul>
+      <h3>형제 요소 선택자</h3>
+      <ul>
+        <li>리스트1</li>
+        <li class="obj4">리스트2</li>
+        <li>리스트3</li>
+      </ul>
+      <ul>
+        <li>리스트1</li>
+        <li class="obj5">리스트2</li>
+        <li>리스트3</li>
+      </ul>
+      <ul>
+        <li>리스트1</li>
+        <li class="obj6">리스트12</li>
+        <li>리스트13</li>
+      </ul>
+      <p><label for="user_name">이름</label>
+        <input type="text" name="user_name" id="user_name" />
+      </p>
+      <button id="btn">모든 선택</button>
+      <button id="btn1">h1 선택자</button>
+      <button id="btn2">id 선택자</button>
+      <button id="btn3">class 선택자</button>
+      <button id="btn4">하위 선택자</button>
+      <button id="btn5">모든 자식 선택자</button>
+      <button id="btn6">자식 하나 선택자</button>
+      <button id="btn7">다음 선택자</button>
+      <button id="btn8">이전 선택자</button>
+      <button id="btn9">형제 선택자</button>
+      <button id="btn10">부모 선택자</button>
+      <button id="btn11">종류 선택자</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+     src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        $("#app").click(function(){
+          $("#appd").append("<div><input type='text' size='6'/><input type ='text' size='15'/><button onclick='delEle(this);'>삭제</button></div>");
+        });
+      });
+      function delEle(ele){
+        $(ele).parent().remove();
+      }
+    </script>
+  </head>
+  <body>
+    <form name="frm" action="#">
+      이름  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;전화번호<br />
+      <div id="appd">
+        <input type="text" size="6"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15"/>&nbsp;&nbsp;
+        <button id="app">추가</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+     src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        $("#frm").submit(function(){
+          if($("#userId").val().trim() == ""){
+            alert("아이디를 입력하세요.");
+            $("#userId").focus();
+            return false;
+          }
+          if($("#userPw").val().trim() == ""){
+            alert("비밀번호를 입력하세요.");
+            $("#userPw").focus();
+            return false;
+          }
+          if($("#userPwCon").val() != $("#userPw").val()){
+            alert("비밀번호가 일치하지 않습니다.");
+            $("#userPwCon").focus();
+            return false;
+          }
+          if($("#userName").val().trim() == ""){
+            alert("이름을 입력하세요.");
+            $("#userName").focus();
+            return false;
+          }
+          if($("#userPh").val().trim() == ""){
+            alert("전화번호를 입력하세요.");
+            $("#userPh").focus();
+            return false;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form name="frm" action="#" id="frm">
+      아이디 : <input type="text" name="userId" id="userId" /><br />
+      비밀번호 : <input type="password" name="userPw" id="userPw"><br />
+      비밀번호 확인 : <input type="password" name="userPwCon" id="userPwCon"><br />
+      이름 : <input type="text" name="userName" id="userName"><br />
+      전화번호 : <input type="tel" name="userPh" id="userPh"><br />
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>

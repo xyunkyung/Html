@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="#" data-role="header">링크 클릭</a>
+    <a href="#" data-role="main">링크 클릭</a>
+    <a href="#" data-role="footer">링크 클릭</a>
+    <a href="#">링크 클릭</a>
+    <button onclick="btn1();">변경</button>
+  </body>
+  <script>
+    var tags = document.getElementsByTagName('a');
+    var btn = document.querySelector('button');
+    function btn1() {
+      for(var i=0; i<tags.length; i++){
+        var arr=tags[i].getAttribute('data-role');
+        if(arr=="header"){
+          tags[i].innerHTML="<h1>HEADER</h1>";
+        } else if(arr=="main"){
+          tags[i].innerHTML="<h1>MAIN</h1>";
+        } else if(arr=="footer"){
+          tags[i].innerHTML="<h1>FOOTER</h1>";
+        }
+      }
+    }
+  </script>
+</html>
