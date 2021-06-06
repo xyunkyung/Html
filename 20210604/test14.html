@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #rolling{width: 500px;
+               height: 300px;
+               overflow: hidden;}
+    </style>
+    <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.1.js">
+    </script>
+    <script>
+      $(function(){
+        roll_interval = setInterval(roll_up, 2000);
+        $("#rolling img").hover(function(){
+          clearInterval(roll_interval);
+        },
+        function(){
+          roll_interval = setInterval(roll_up, 2000);
+        });
+      });
+      function roll_up(){
+        $("#rolling img:last").after($("#rolling img:first"));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="rolling">
+      <img src="images/img1.jpg" />
+      <img src="images/img2.jpg" />
+      <img src="images/img3.jpg" />
+      <img src="images/img4.jpg" />
+    </div>
+
+  </body>
+</html>

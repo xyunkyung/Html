@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.2.js">
+    </script>
+    <script>
+      $(function(){
+        $("#btn4").toggle(function(){
+          $(this).next().css("background", "red");
+        },
+        function() {
+          $(this).next().css("background", "orange");
+        },
+        function() {
+          $(this).next().css("background", "yellow");
+        },
+        function() {
+          $(this).next().css("background", "#fff");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>toggle 메서드</h2>
+      <button id="btn4">toggle</button>
+      <p>
+        누를 때마다 실행 함수를 차례대로 번갈아 가면서 실행합니다. <br />
+        위의 toggle 버튼을 계속 클릭해 보세요 !!
+      </p>
+    </div>
+  </body>
+</html>

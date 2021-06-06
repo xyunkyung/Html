@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        $("#btn2").mouseover(function(){
+          $("#textZone").css("background", "yellow");
+        });
+        $("#btn2").mouseleave(function(){
+          $("#textZone").css("background", "#fff");
+        });
+        $("#btn2").focus(function(){
+          $("#textZone").css("background", "yellow");
+        });
+        $("#btn2").blur(function(){
+          $("#textZone").css("background", "#fff");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+    <h1>이벤트 연습</h1>
+    <p id="textZone">웹 브라우저에서 버튼을 클릭한다거나 mouse를 움직이거나 하는 모든 행위를 ‘이벤트’라고 합니다. 그리고 이벤트발생 시 함수의 실행문이 수행되도록 이벤트를 지정하는 것을 이벤트 핸들러라고 합니다.
+    </p>
+    <h2>mouseover 메서드</h2>
+    <p><button id="btn2">mouseover</button> </p>
+  </div>
+  </body>
+</html>

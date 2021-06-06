@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.js">
+    </script>
+    <script>
+      $(function(){
+        $(".list1").css("display", "none");
+        $("#listWrap").mouseenter(function(){
+          $(".list1").css("display", "block");
+        });
+        $("#listWrap").mouseleave(function(){
+          $(".list1").css("display", "none");
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>mouseleave 메서드</h2>
+      <div id="listWrap">
+        <h3>관련 사이트</h3>
+        <ul class="list1">
+          <li><a href="#">list1</a></li>
+          <li><a href="#">list2</a></li>
+          <li><a href="#">list3</a></li>
+          <li><a href="#">list3</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
